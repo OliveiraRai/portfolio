@@ -17,6 +17,7 @@ export function ProfileHeader({ profile }) {
       <div className="profile-professional">
         <span className="level">Nível {profile.level}</span>
         <strong>{profile.levelLabel}</strong>
+        <strong>Foco em {profile.focusOn}</strong>
         <a className="button" href="#contact">
           Contatar
         </a>

@@ -4,7 +4,7 @@ export const projects = [
     name: "FreeChat",
     image: "/assets/projects/freechat.png",
     description:
-      "FreeChat é uma aplicação de chat 1x1 com modelo host/guest e uma regra central: nenhum dado é presistido, incluindo usuários, salas ou mensagens. Após os usuários encerrarem a conversa, o host pode deletar qualquer indício que tal conversa aconteceu com um clique.",
+      "Aplicação web de chat 1x1 com modelo host/guest e sessões temporárias, desenvolvida com FastAPI e React. O sistema foi projetado para não persistir usuários, salas ou mensagens após o encerramento da conversa.",
     technologies: [
       "Python",
       "FastAPI",
