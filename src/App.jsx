@@ -8,6 +8,7 @@ import { ProfileHeader } from "./components/ProfileHeader";
 import { Projects } from "./components/Projects";
 import { Sidebar } from "./components/Sidebar";
 import { Contact } from "./components/Contact";
+import { ai } from "./data/ai";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
             <Sidebar
               profile={profile}
               technologies={technologies}
+              ai={ai}
               statistics={statistics}
               feedback={feedback}
             />

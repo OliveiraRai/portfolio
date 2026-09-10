@@ -8,7 +8,7 @@ function Section({ title, children }) {
     </section>
   );
 }
-export function Sidebar({ profile, technologies, statistics, feedback }) {
+export function Sidebar({ profile, technologies, ai, statistics, feedback }) {
   return (
     <aside className="sidebar" aria-label="Informações profissionais">
       <Section title="Disponibilidade">
@@ -20,6 +20,15 @@ export function Sidebar({ profile, technologies, statistics, feedback }) {
       <Section title="Tecnologias">
         <div className="technology-list">
           {technologies.map((item) => (
+            <span className="technology" title={item.name} key={item.name}>
+              <b>{item.short}</b>
+              <span>{item.name}</span>
+            </span>
+          ))}
+        </div>
+      </Section><Section title="Ferramentas IA">
+        <div className="technology-list">
+          {ai.map((item) => (
             <span className="technology" title={item.name} key={item.name}>
               <b>{item.short}</b>
               <span>{item.name}</span>
